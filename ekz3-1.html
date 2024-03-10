@@ -1,0 +1,22 @@
+<!---Создать страничку, при открытии которой фон
+на ней будет меняться на случайный каждые 300 мс.--->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>ZADACHA 1</title>
+</head>
+<body>
+<script type="text/javascript">
+
+var getNum = function() {return Math.floor(Math.random() * 256)};
+
+setInterval(function() {
+	document.body.style.backgroundColor = 'rgb(' + getNum() + ',' + getNum() + ',' + getNum() + ')';
+}, 300);
+
+</script>
+
+</body>
+</html>
